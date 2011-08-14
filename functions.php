@@ -111,7 +111,7 @@ class MEET_Redirect {
     '/^\/contact.html$/' => '/contact/',
     '/^\/different.html$/' => '/different/',
     '/^\/donate.html$/' => '/donate/',
-    '/^\/faq.html$/' => '/faq/',
+    '/^\/faq(.html)$/' => '/category/faq/',
     '/^\/impact.html$/' => '/impact/',
     '/^\/iap(.html)?$/' => '/iap2009/',
     '/^\/instructors.html$/' => '/instructors/',
