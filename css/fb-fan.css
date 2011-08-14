@@ -1,0 +1,28 @@
+a {
+color: #339;
+text-decoration: none;
+}
+
+a:hover {
+color: #f93;
+}
+
+.fan_box {
+font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.fan_box .full_widget {
+border: 1px solid #ddd;
+}
+
+.fan_box .page_stream {
+height: 450px;
+}
+
+.fan_box .page_stream_short {
+height: 450px;
+}
+
+.fan_box .full_widget .connect_top {
+background: #ccc;
+}

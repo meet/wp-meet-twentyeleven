@@ -1,0 +1,495 @@
+/*
+Theme Name: MEET Twenty Eleven
+Description: MEET theme for WordPress.
+Author: Max Goldman
+Version: 1.0
+Template: twentyeleven
+*/
+@import url("css/jqueryui.css");
+@import url("css/jqueryui-style.css");
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+:focus {/* remember to define focus styles! */
+	outline: 0;
+}
+body {
+	background: #fff;
+}
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+
+/* Assistive text */
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#access a.assistive-text:active,
+#access a.assistive-text:focus {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	color: #1982d1;
+	clip: auto !important;
+	font-size: 12px;
+	position: absolute;
+	text-decoration: underline;
+	top: 0;
+	left: 7.6%;
+}
+
+article {
+position: relative;
+}
+.entry-meta .edit-link a {
+position: absolute; left: -6em; top: 1em;
+}
+
+/* ** */
+
+body {
+font-family: "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+a {
+color: #339;
+text-decoration: none;
+}
+
+a:hover {
+color: #f93;
+}
+
+a img {
+border: none;
+}
+
+#main p, .entry-content li {
+font-size: 13px;
+line-height: 18px;
+color: #333;
+margin: 1em 0 1em 0;
+}
+
+.entry-content ul {
+margin-left: 2em;
+}
+
+#main .page-header p {
+font-size: 24px;
+line-height: 18px;
+color: #333;
+margin: 1em 0;
+}
+
+#page {
+margin: 77px auto 0 auto;
+max-width: 1000px;
+}
+
+#primary {
+float: left;
+margin: 0;
+width: 100%;
+}
+#content {
+margin: 0 34% 0 7.6%;
+width: 58.4%;
+}
+#secondary {
+float: right;
+margin-right: 7.6%;
+width: 18.8%;
+}
+
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.625em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.625em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#branding hgroup {
+position: absolute; top:0; left:0; right: 0;
+height: 77px;
+background: url(img/top.gif);
+}
+
+#branding hgroup h1 a {
+display: block;
+position: absolute;
+top: -100px; left: 0; right: 0;
+height: 167px;
+}
+
+#branding hgroup h2 {
+display: none;
+}
+
+#searchform {
+display: none;
+}
+
+#access {
+position: absolute; top:77px; left: 0; right: 0;
+}
+
+#access ul {
+position: absolute; top:0; left: 0; right: 0;
+list-style-type: none;
+margin: 1px 0;
+padding: 0 10px;
+background: url(img/dash_h_gray.png) repeat-x bottom;
+font-size: 12px;
+font-weight: bold;
+}
+
+#access li {
+float: left;
+position: relative;
+margin-right: 2px;
+}
+
+#access a {
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+margin-bottom:1px;
+padding: 1px 1px 0 1px;
+}
+
+#access li:hover > a, #access li.current_page_item > a {
+color: #f93;
+background: url(img/dash_hv_gray.png);
+margin-bottom:0;
+border-bottom: 1px solid white;
+}
+
+#access ul ul {
+display: none;
+float: left;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 99999;
+width: 180px;
+margin: 29px 0 0 0;
+padding: 0 1px 1px 1px;
+background: white url(img/dash_hvu_gray.png) bottom;
+}
+
+#access ul ul li {
+background: white;
+width: 180px;
+}
+
+#access ul ul a {
+padding: 1px 1px 0 0;
+}
+
+#access ul ul li:hover a, #access ul ul li.current_page_item a {
+background: white;
+}
+
+#access a div {
+background: white url(img/chevron_gray.png) no-repeat left center;
+padding: 6px 8px 6px 16px;
+}
+
+#access ul li:hover > ul {
+display: block;
+}
+
+#main {
+clear: both;
+padding: 50px 0 0;
+}
+
+#nav-single {
+display: none;
+}
+
+#nav-above {
+display: none;
+}
+
+#nav-below {
+margin: 2em 0 0 0;
+}
+
+.nav-previous {
+float: left;
+}
+
+.nav-next {
+float: right;
+}
+
+.entry-meta .edit-link a,
+.commentlist .edit-link a {
+	background: #eee;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #666;
+	float: right;
+	font-size: 12px;
+	line-height: 1.5em;
+	font-weight: 300;
+	text-decoration: none;
+	padding: 0 8px;
+}
+.entry-meta .edit-link a:hover,
+.commentlist .edit-link a:hover {
+	background: #888;
+	color: #fff;
+}
+.entry-content .edit-link {
+	clear: both;
+	display: block;
+}
+
+.entry-meta > * {
+display: none;
+}
+.entry-meta .edit-link {
+display: block;
+}
+.entry-meta .tag-links {
+display: block;
+position: absolute; top: 0; right: 0;
+margin-top: 8px;
+}
+.entry-meta .tag-links span {
+display: none;
+}
+
+h1, h2, h3 {
+margin-top: 0;
+color: #339;
+font-weight: normal;
+clear: both;
+}
+
+h1 {
+color: #f93;
+text-align: right;
+font-size: 32px;
+margin: 0 0 13px 0;
+}
+
+.archive .post h1 {
+margin: 26px 0 13px 0;
+text-align: left;
+font-size: 24px;
+}
+
+.home .post .entry-title {
+text-align: left;
+font-size: 32px;
+margin: 0 0 13px 0;
+}
+
+.archive .post.category-staff .entry-title,
+.archive .post.category-instructors .entry-title,
+.archive .post.category-board .entry-title,
+.archive.category-faq .post .entry-title {
+font-size: 16px
+}
+.post.category-staff .entry-meta .tag-links,
+.post.category-instructors .entry-meta .tag-links,
+.post.category-board .entry-meta .tag-links ,
+.archive.category-faq .post .entry-meta .tag-links {
+margin-top: 0;
+}
+
+h2 {
+font-size: 24px;
+margin: 26px 0 13px 0;
+}
+
+h3 {
+margin: 26px 0 13px 0;
+}
+
+.entry-format {
+display: none;
+}
+
+.widget_meta {
+display: none;
+}
+.logged-in .widget_meta {
+display: block;
+background: #eee;
+-moz-border-radius: 3px;
+border-radius: 3px;
+color: #666;
+float: right;
+font-size: 12px;
+line-height: 1.5em;
+font-weight: 300;
+text-decoration: none;
+padding: 0 8px;
+}
+.logged-in .widget_meta li {
+margin: 0
+}
+
+#secondary h3 {
+display: none;
+}
+
+#centerstage {
+float: left;
+width: 354px;
+padding: 0 16px 16px 16px;
+}
+
+.home #content {
+width: 240px;
+margin: 0;
+}
+
+.home #primary {
+width: 240px;
+padding: 0 16px 16px 16px;
+}
+
+.home #secondary {
+float: left;
+width: 300px;
+margin: 0;
+padding: 0 16px 16px 16px;
+}
+
+.post.category-flagged .entry-content {
+position: relative;
+border: 1px solid #ddd;
+margin-top: 4em;
+padding: 0.4em 1em 0 1em;
+}
+
+.post.category-flagged .entry-title {
+display: none;
+}
+
+.post.category-flagged .entry-content img {
+position: absolute; top:-30px; left:-26px;
+}
+
+input {
+font-size: 13px;
+margin-right: 2px;
+}
+
+button {
+font-size: 13px;
+text-transform: uppercase;
+width: 121px;
+height: 27px;
+border: none;
+color: #fff;
+background: #339;
+background: -webkit-gradient(linear, left top, left bottom, from(#5765AB), to(#223592));
+background: -moz-linear-gradient(top,  #5765AB,  #223592);
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+p.horizontal * {
+vertical-align: middle;
+}
+
+p.footnote {
+font-size: 9px;
+}
+
+.fb-fan {
+background: #ddd;
+}
+
+.below-fb-fan {
+clear: both;
+font-size: 9px;
+padding: 1em 0 1em 10px;
+background: #ccc;
+background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#999));
+background: -moz-linear-gradient(top,  #ddd,  #999);
+color: #666;
+}
+
+#colophon {
+clear: both;
+padding: 1em 0.1em;
+}
+
+#colophon a {
+display: none;
+}
+
+#site-generator {
+font-size: 9px;
+color: #666;
+background: #eee;
+padding:1em;
+margin-top:2em;
+}

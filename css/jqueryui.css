@@ -1,0 +1,107 @@
+/*
+ * selections from jQuery UI CSS
+ */
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden { display: none; }
+.ui-helper-hidden-accessible { position: absolute; left: -99999999px; }
+.ui-helper-reset { margin: 0; padding: 0; border: 0; outline: 0; line-height:
+1.3; text-decoration: none; font-size: 100%; list-style: none; }
+.ui-helper-clearfix:after { content: "."; display: block; height: 0; clear:
+both; visibility: hidden; }
+.ui-helper-clearfix { display: inline-block; }
+/* required comment for clearfix to work in Opera \*/
+* html .ui-helper-clearfix { height:1%; }
+.ui-helper-clearfix { display:block; }
+/* end clearfix */
+.ui-helper-zfix { width: 100%; height: 100%; top: 0; left: 0; position:
+absolute; opacity: 0; filter:Alpha(Opacity=0); }
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled { cursor: default !important; }
+
+/* Accordion
+----------------------------------*/
+.ui-accordion .ui-accordion-header { cursor: pointer; position: relative;
+margin-top: 1px; zoom: 1; }
+.ui-accordion .ui-accordion-li-fix { display: inline; }
+.ui-accordion .ui-accordion-header-active { border-bottom: 0 !important; }
+.ui-accordion .ui-accordion-header a { display: block; font-size: 1em;
+padding: .5em .5em .5em .7em; }
+.ui-accordion-icons .ui-accordion-header a { padding-left: 2.2em; }
+.ui-accordion .ui-accordion-header .ui-icon { position: absolute; left: .5em;
+top: 50%; margin-top: -8px; }
+.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0;
+margin-top: -2px; position: relative; top: 1px; margin-bottom: 2px; overflow:
+auto; display: none; zoom: 1; }
+.ui-accordion .ui-accordion-content-active { display: block; }
+
+/* Tabs
+----------------------------------*/
+.ui-tabs { position: relative; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative;
+top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration:
+none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom:
+1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav
+li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav
+li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems
+obsolete, but required to overcome bug in Opera applying cursor: text overall
+if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border: 0; padding: 16px;
+background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+/* Component containers
+----------------------------------*/
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default, .ui-widget-content .ui-state-default {
+border: 1px solid #ddd; background: #ccc; color: #fff;
+background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#999));
+background: -moz-linear-gradient(top,  #ddd,  #999);
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+color: #fff; }
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus,
+.ui-widget-content .ui-state-focus { border: 1px solid #ddd; background: #ddd; }
+.ui-state-hover a, .ui-state-hover a:hover {
+color: #f93; }
+.ui-state-active, .ui-widget-content .ui-state-active {
+border: 1px solid #ddd; background: #fff }
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+color: #339; }
+.ui-widget :active { outline: none; }
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid
+#fcefa1/*{borderColorHighlight}*/; background: #fbf9ee/*{bgColorHighlight}*/
+url(images/ui-bg_glass_55_fbf9ee_1x400.png)/*{bgImgUrlHighlight}*/
+50%/*{bgHighlightXPos}*/ 50%/*{bgHighlightYPos}*/
+repeat-x/*{bgHighlightRepeat}*/; color: #363636/*{fcHighlight}*/; }
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a { color:
+#363636/*{fcHighlight}*/; }
+.ui-state-error, .ui-widget-content .ui-state-error {border: 1px solid
+#cd0a0a/*{borderColorError}*/; background: #fef1ec/*{bgColorError}*/
+url(images/ui-bg_glass_95_fef1ec_1x400.png)/*{bgImgUrlError}*/
+50%/*{bgErrorXPos}*/ 50%/*{bgErrorYPos}*/ repeat-x/*{bgErrorRepeat}*/; color:
+#cd0a0a/*{fcError}*/; }
+.ui-state-error a, .ui-widget-content .ui-state-error a { color:
+#cd0a0a/*{fcError}*/; }
+.ui-state-error-text, .ui-widget-content .ui-state-error-text { color:
+#cd0a0a/*{fcError}*/; }
+.ui-priority-primary, .ui-widget-content .ui-priority-primary { font-weight:
+bold; }
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary { opacity:
+.7; filter:Alpha(Opacity=70); font-weight: normal; }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled { opacity: .35;
+filter:Alpha(Opacity=35); background-image: none; }

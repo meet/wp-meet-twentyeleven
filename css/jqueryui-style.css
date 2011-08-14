@@ -1,0 +1,76 @@
+.ui-tabs.tabs-above .ui-tabs-panel {
+border: 1px solid #ddd;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-above li {
+-moz-border-radius-topleft: 6px;
+-webkit-border-top-left-radius: 6px;
+border-top-left-radius: 6px;
+-moz-border-radius-topright: 6px;
+-webkit-border-top-right-radius: 6px;
+border-top-right-radius: 6px;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-above li a {
+display: block;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 13px;
+padding: 0.7em 2.5em 0.4em 2.5em;
+}
+
+.ui-tabs.tabs-below .ui-tabs-panel {
+border: none;
+padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li {
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+padding: 0 !important;
+margin: 0 !important;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li a {
+display: inline;
+font-size: 12px;
+padding: 3px;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li a img {
+float: left;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li a span {
+float: left;
+padding: .5em;
+width: 90px;
+color: #fff;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li.ui-state-default a span {
+display: none;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li.ui-state-active a span {
+display: block;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li.ui-state-default {
+border: none;
+background: #fff;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li.ui-state-active {
+background: #339 !important;
+}
+
+.ui-tabs .ui-tabs-nav.tabs-below li.ui-state-hover {
+background: #f93;
+}
+
+.elements-youtube-size .element {
+height: 315px;
+width: 320px;
+}
