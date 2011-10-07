@@ -75,7 +75,7 @@ add_filter('posts_orderby', 'meet_change_query_sort_order');
 function twentyeleven_posted_on() { }
 
 function meet_head() {
-  echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>';
+  echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>';
   echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>';
   $js = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'js';
   $scripts = array_filter(scandir($js), function($name) {
