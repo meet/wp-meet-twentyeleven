@@ -18,12 +18,7 @@
     <div class="ui-tabs tabs-below">
     <?php foreach (meet_home_videos() as $video) { ?>
       <div id="video<?=esc_attr($video->link_id)?>">
-<object width="320" height="259">
-  <param name="movie" value="http://www.youtube-nocookie.com/v/<?=$video->youtube_id?>&hl=en_US&fs=1&rel=0"/>
-  <param name="allowFullScreen" value="true"/>
-  <param name="allowscriptaccess" value="always"/>
-  <embed src="http://www.youtube-nocookie.com/v/<?=$video->youtube_id?>&hl=en_US&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="259"/>
-</object>
+        <iframe width="320" height="259" src="http://www.youtube.com/embed/<?=$video->youtube_id?>?rel=0&autohide=1&modestbranding=1&showinfo=0&theme=light" frameborder="0" allowfullscreen></iframe>
       </div>
   <?php } ?>
       <ul class="tabs-below">
